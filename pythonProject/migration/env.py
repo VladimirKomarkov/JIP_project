@@ -14,8 +14,8 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-from app import models
 from app.db.base import Base
+from app.models import *
 
 
 
