@@ -1,3 +1,5 @@
+# Создать скрипт, который создаёт 4 процесса.
+# Воркер в данном случае пусть так же выводит инфу о id и слипается на пару секунд.
 from multiprocessing import Process
 import time
 
@@ -19,5 +21,4 @@ if __name__ == "__main__":
     for process in processes:
         process.join()
 
-
-    print("Все процессы завершены")
+    print("All tasks finished")
